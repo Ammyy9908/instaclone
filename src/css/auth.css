@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'billabong';
+    src: local('billabong'), url(../fonts/Billabong.woff) format('woff');
+  }
+.container__auth{
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    
+}
+
+.brand__name{
+    text-align: center;
+    flex:.3;
+}
+.form__auth{
+    flex:.5;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:75%;
+}
+.form__input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.form__auth > form{
+    width: 100%;
+}
+.form__input > input{
+    width: 100% !important;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+}
+.form__submit__button{
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+}
+.form__submit__button > input[type="submit"]{
+    width: 100%;
+    height: 35px;
+    background-color:#0095F6;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.brand__name > h1{
+    color: #262626;
+    font-size: 45px;
+    font-family: billabong;
+}
+.brand__name > h2{
+    color: #8E8E8E;
+    font-size: 17px;
+}
+.switch_auth_link > div >a{
+    font-size: 17px;
+    color: #0095F6;
+    font-size: 600;
+}

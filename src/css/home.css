@@ -1,0 +1,123 @@
+.home__container{
+    width: 75%;
+    margin: 35px auto;
+    padding: 10px;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/* .stories{
+    width: 614px;
+    display:flex;
+    border: 1px solid #dbdbdb;
+    margin: 15px auto;
+    position:relative;
+    overflow: scroll hidden;
+    min-height: auto;
+    min-width: auto;
+    background-color:#fff;
+    align-items:center;
+    overflow-x: scroll;
+} */
+
+.home__left{
+    flex:.5;
+}
+.home__right{
+    margin: 15px auto;
+    margin-left: 25px;
+    flex:.5;
+}
+.user__profile{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    width: 293px;
+    align-items: center;
+    padding:5px;
+}
+.user__profile_image{
+    width: 58px;
+    height: 58px;
+}
+.user__profile_image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile__info{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+.profile__info > a{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration: none;
+}
+.profile__info > a:nth-child(1){
+    font-weight: 650;
+    word-spacing: 2px;
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+.profile__info > p{
+    font-weight: normal;
+    word-spacing: 2px;
+    color: #8E8E8E;
+    font-size: 14px;
+    line-height: 18px;
+}
+.profile__link{
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.suggestions{
+    padding:16px;
+}
+.suggesttion__title{
+    display: flex;
+    justify-content:space-between;
+}
+.suggesttion__title > strong{
+    color: #8e8e8e;
+}
+.suggesttion__title > a{
+    color: #252525;
+    text-decoration: none;
+}
+
+.suggestion__meta{
+    width:100%;
+    margin-top: 15px;
+}
+.person__detail{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.follower__image{
+    width: 32px;
+    height: 32px;
+}
+.follower__image > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+@media screen and (max-width:968px){
+.home__right{
+    display:none;
+}
+.stories{
+    width: 514px;
+    transform:scaleX(.9);
+}
+}

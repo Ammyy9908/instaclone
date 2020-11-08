@@ -1,0 +1,189 @@
+.messages__container{
+    width: 65%;
+    height: 650px;
+    border: .5px solid #ccc;
+    background-color:#fff;
+    margin: 85px auto;
+    display:grid;
+    grid-template-columns: .1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "sidenav sidenav body body"
+    "sidenav sidenav body body";
+    border-radius:10px;
+}
+.messages__sidenav{
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.sidenav__header{
+    padding:15px;
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top-left-radius:10px;
+}
+.messages__body{
+    grid-area: body;
+}
+.user__chat__info{
+    display: flex;
+    justify-content:space-around;
+    width: 90%;
+}
+.sidenav__chatList{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    border-right: 1px solid #ccc;
+}
+.message__blank{
+    width: 100%;
+    height: 100%;
+}
+.message__blank {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.centered__elements{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content:space-around;
+    align-items: center;
+}
+.centered__elements > h2{
+    font-size: 22px;
+    line-height:26px;
+    color: #262626;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.centered__elements > span{
+    font-size: 14px;
+    line-height:26px;
+    color: #bebebe;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.centered__elements > button{
+    font-size: 14px;
+    line-height:18px;
+    color: #fff;
+    border: none;
+    width: 118px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0095f6;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.messages__body{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin: 0;
+}
+.message__body__header{
+    width: 100%;
+    display: flex;
+    flex: .1;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-top-right-radius: 10px;
+}
+.message__body__header__left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+   
+}
+.message__body__header__left > img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+.message__body__content{
+    flex:.8;
+    overflow:scroll;
+}
+.message__body__footer{
+    flex: .1;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.chat__input{
+    width:85%;
+    display: flex;
+    border: 1.5px solid #868186;
+    height: 75%;
+    justify-content:flex-start;
+    align-items: center;
+    border-radius: 65px;
+}
+.emojis{
+flex:.1;
+margin-left: 15px;
+}
+.chat__input > input{
+    flex:.6;
+    height: 65%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.chat__bubble__friend{
+    width: 300px;
+    display: flex;
+    padding:15px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.chat__bubble__me{
+    width: 300px;
+    display: flex;
+    padding:20px;
+    justify-content:space-around;
+    align-items: center;
+    float:right;
+}
+.chat__bubble__friend > span{
+    flex:.6;
+}
+.chat__bubble__me > span{
+    flex:.6;
+    margin-left: 10px;
+}
+.chat__content{
+    flex:.8;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #efefef;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .messages__container{
+        width: 100%;
+        grid-template-columns: .3fr 2fr 1.2fr 1fr;
+    }
+}

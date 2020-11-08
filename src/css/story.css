@@ -1,0 +1,36 @@
+.story{
+    width: 100px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.story:nth-child(1){
+    margin-left: 10px;
+}
+
+
+.story__user__image{
+width: 55px;
+height: 55px;
+border: 2px solid #f00b6a;
+border-radius: 50%;
+display: flex;
+justify-content:center;
+align-items: center;
+}
+.story > span{
+    display:block;
+    font-size: 12px;
+}
+.story > .story__user__image > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

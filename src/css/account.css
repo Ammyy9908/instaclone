@@ -1,0 +1,205 @@
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Change Profile Photo';
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+    color: #0095f7;
+  }
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  }
+.account__container{
+    width: 65%;
+    height: 650px;
+    background-color:#fff;
+    margin: 85px auto;
+    display:grid;
+    grid-template-columns: .1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr;
+    grid-template-areas: 
+    "sidenav sidenav body body"
+    "sidenav sidenav body body";
+    border: 1px solid #dbdbdb;
+}
+.account_sidenav{
+    width: 100%;
+    grid-area: sidenav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+.sidenav__option{
+    width: 180px;
+    padding: 15px;
+    
+}
+.sidenav__option:hover{
+    background-color:#fafafa;
+}
+
+
+.account__body{
+    grid-area: body;
+    border-left: 1px solid #ddd;
+}
+.edit__top{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top:10px;
+    flex:.2;
+    margin-left: 10px;
+   
+}
+.edit__top > img{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+.basic__user__profile > h1{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.basic__user__profile > button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #0095F6;
+    line-height:18px;
+    font-weight: 600;
+}
+form{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+    margin: 0 auto;
+    margin-top: 25px;
+    
+}
+.form__control{
+    width: 85%;
+    padding:15px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.form__control > label{
+    flex:.3;
+    height: 32px;
+
+    font-weight: 600;
+}
+.form__control > input{
+    flex:.7;
+    height: 32px;
+    border: 1px solid #dbdbdd;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color:#fafafa;
+}
+
+.form__control > button{
+    height: 30px;
+    width: 67px;
+    background-color:#0095f7;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form__control > textarea{
+    flex:.7;
+    height: 48px;
+    border: 1px solid #dbdbdd;
+    border-radius: 2px;
+    cursor:text;
+    line-height:18px;
+}
+.change__password{
+    display: flex;
+    height: 85%;
+    flex-direction: column;
+    justify-content:center;
+}
+.change__password__top{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content:center;
+    align-items:center;
+    flex:.2;
+}
+.change__password__top > img{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+.change__password__top > h1{
+    font-size: 24px;
+    font-weight: 300;
+}
+.change__password > form{
+    flex:.8;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.form__change__control{
+    width: 85%;
+    padding:15px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.form__change__control > input{
+    flex:.7;
+    height: 32px;
+    border: 1px solid #dbdbdd;
+    border-radius: 2px;
+    padding-left: 10px;
+    background-color:#fafafa;
+}
+.form__change__control > button{
+    height: 30px;
+    width: 150px;
+    background-color:#0095f7;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.form__change__control > label{
+    flex:.3;
+    height: 32px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px){
+    .account__container{
+            width:100%;
+    }
+    
+}

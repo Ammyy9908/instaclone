@@ -1,0 +1,15 @@
+.person__detail{
+margin-bottom: 25px;
+}
+.follower__link > a{
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.follower__detail > a{
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}

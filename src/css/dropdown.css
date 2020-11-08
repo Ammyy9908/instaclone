@@ -1,0 +1,29 @@
+.dropdown{
+    width: 230px;
+    border: 1px solid #ccc;
+    position:fixed;
+    right: 0;
+    top: 10;
+    margin-right: 45px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.774);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 998;
+}
+.dropdown__option{
+    display: flex;
+    padding:10px;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 55%;
+}
+.dropdown__option > a{
+    text-decoration: none;
+    color: #262626;
+    text-align: center;
+}
