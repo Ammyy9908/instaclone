@@ -61,7 +61,7 @@ function App() {
     
 }}  />
 
-<Route path="direct/:chat__id" render={(props) => {
+<Route path="/direct/:chat__id" render={(props) => {
    
    return <Messages chatId={props.match.params.chat__id} user={user && user}/>
  
