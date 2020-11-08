@@ -34,7 +34,7 @@ function App() {
   
   
   <Switch>
-  <Route exact path="http://Ammyy9908.github.io/instaclone/">
+  <Route exact path="/instaclone/">
     <Home/>
     </Route>
     <Route exact path="/auth/:auth_type" render={(props) => {
@@ -45,7 +45,7 @@ function App() {
     return <Auth login={login} />
 }}  />
 
-<Route exact path="http://Ammyy9908.github.io/instaclone/explore" render={(props) => {
+<Route exact path="/explore" render={(props) => {
   //  let login=true;
   //  if(props.match.params.auth_type=="register"){
   //    login=false;
@@ -54,21 +54,21 @@ function App() {
 }}  />
 
 
-<Route path="http://Ammyy9908.github.io/instaclone/direct/inbox/" render={(props) => {
+<Route path="/direct/inbox/" render={(props) => {
    
     return <Messages user={user && user}/>
   
     
 }}  />
 
-<Route path="http://Ammyy9908.github.io/instaclone/direct/:chat__id" render={(props) => {
+<Route path="direct/:chat__id" render={(props) => {
    
    return <Messages chatId={props.match.params.chat__id} user={user && user}/>
  
    
 }}  />
 
-<Route path="http://Ammyy9908.github.io/instaclone/accounts/:actionType" render={(props) => {
+<Route path="/accounts/:actionType" render={(props) => {
    
    if(props.match.params.actionType=="edit"){
     return <AccountEdit user={user && user} editType='edit'/>
@@ -85,7 +85,7 @@ function App() {
    
 }}  />
 
-<Route exact path="http://Ammyy9908.github.io/instaclone/profile/:profile_name" render={(props) => {
+<Route exact path="/profile/:profile_name" render={(props) => {
    const uname = props.match.params.profile_name;
     return <Profile id={uname} user={user && user} />
 }}  />

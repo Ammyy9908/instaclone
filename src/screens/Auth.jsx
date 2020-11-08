@@ -76,7 +76,7 @@ function Auth({ login }) {
             const r = await axios.post('https://instaserversumit.herokuapp.com/login', { email, password });
             if (r.status === 200) {
                 Cookies.set('ACCESS-TOKEN', r.data.token, { expires: 1 });
-                window.location.href = '/';
+                window.location.href = '/instaclone/';
             }
         } catch (e) {
             if (e.response && e.response.data) {
