@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/instaclone/static/css/main.b32df78a.chunk.css",
+    "main.js": "/instaclone/static/js/main.d83458f8.chunk.js",
+    "main.js.map": "/instaclone/static/js/main.d83458f8.chunk.js.map",
+    "runtime-main.js": "/instaclone/static/js/runtime-main.5823f0c6.js",
+    "runtime-main.js.map": "/instaclone/static/js/runtime-main.5823f0c6.js.map",
+    "static/js/2.e18bb9fa.chunk.js": "/instaclone/static/js/2.e18bb9fa.chunk.js",
+    "static/js/2.e18bb9fa.chunk.js.map": "/instaclone/static/js/2.e18bb9fa.chunk.js.map",
+    "index.html": "/instaclone/index.html",
+    "static/css/main.b32df78a.chunk.css.map": "/instaclone/static/css/main.b32df78a.chunk.css.map",
+    "static/js/2.e18bb9fa.chunk.js.LICENSE.txt": "/instaclone/static/js/2.e18bb9fa.chunk.js.LICENSE.txt",
+    "static/media/auth.css": "/instaclone/static/media/Billabong.4fa5d836.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5823f0c6.js",
+    "static/js/2.e18bb9fa.chunk.js",
+    "static/css/main.b32df78a.chunk.css",
+    "static/js/main.d83458f8.chunk.js"
+  ]
+}
