@@ -23,7 +23,7 @@ function Profile() {
     // Handle Logout
 
     const handleLogout = async ()=>{
-        const r = await axios.get(`https://instaserversumit.herokuapp.com/user/logout/${user && user.id}`);
+        const r = await axios.get(`https://instaserversumit.herokuapp.com/logout/${user && user.id}`);
         if(r.status===200){
         dispatch({type:'SET_USER',user:null})
         Cookies.remove('ACCESS-TOKEN');
